@@ -10,7 +10,18 @@ public class CheckInventory : MonoBehaviour
     public UnityEvent noMatch;
     public void CheckForItem(string itemToCheck)
     {
-        if (itemToCheck == inventory.itemInInventory.ToString()) match?.Invoke();
-        else noMatch?.Invoke();
+        if (inventory.inventoryItems.Count > 0)
+        {
+            for (int i = inventory.inventoryItems.Count - 1; i >= 0; i--)
+            {
+                if (itemToCheck == inventory.inventoryItems[i].ToString())
+                {
+                    match?.Invoke();
+                    return;
+                }
+            }
+        }
+
+        noMatch?.Invoke();
     }
 }

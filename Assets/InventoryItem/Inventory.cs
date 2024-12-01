@@ -7,24 +7,43 @@ using UnityEngine.Events;
 public class Inventory : ScriptableObject
 {
     public enum itemTypes { Key, None }
-    public itemTypes itemInInventory = itemTypes.None;
-    public void SetItem(string itemType)
+    public List<itemTypes> inventoryItems;
+    private void Awake()
+    {
+        inventoryItems = new List<itemTypes>();
+    }
+    public void AddItem(string itemType)
     {
         switch (itemType)
         {
             case "Key":
-                itemInInventory = itemTypes.Key;
-                return;
-            case "None":
-                itemInInventory = itemTypes.None;
+                inventoryItems.Add(itemTypes.Key);
                 return;
         }
 
         Debug.LogError(itemType + " is not a valid item! (Have you spelled it correctly?)");
     }
 
+    public void RemoveItem(string itemType)
+    {
+        if (inventoryItems.Count > 0)
+        {
+            for (int i = inventoryItems.Count - 1; i >= 0; i--)
+            {
+                if (inventoryItems[i].ToString() == itemType)
+                {
+                    inventoryItems.Remove(inventoryItems[i]);
+                    return;
+                }
+            }
+        }
+
+        Debug.LogError("Item Was Not Found In Inventory!");
+    }
+
     public void EmptyInventory()
     {
-        itemInInventory = itemTypes.None;
+        inventoryItems.Clear();
+        inventoryItems.Add(itemTypes.None);
     }
 }

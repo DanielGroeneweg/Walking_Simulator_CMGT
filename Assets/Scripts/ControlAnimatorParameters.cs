@@ -5,14 +5,12 @@ using UnityEngine;
 public class ControlAnimatorParameters : MonoBehaviour
 {
     public Animator animator;
-    public string parameterName;
-
-    public void EnableBool()
+    public void EnableBool(string parameterName)
     {
         animator.SetBool(parameterName, true);
     }
 
-    public void DisableBool()
+    public void DisableBool(string parameterName)
     {
         animator.SetBool(parameterName, false);
     }
