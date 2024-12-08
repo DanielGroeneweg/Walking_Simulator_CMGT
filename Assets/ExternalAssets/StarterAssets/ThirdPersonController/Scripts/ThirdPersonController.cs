@@ -28,6 +28,7 @@ namespace StarterAssets
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
 
+        public AudioSource SoundFXObject;
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
@@ -376,7 +377,16 @@ namespace StarterAssets
                 if (FootstepAudioClips.Length > 0)
                 {
                     var index = Random.Range(0, FootstepAudioClips.Length);
-                    AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
+
+                    AudioSource audioSource = Instantiate(SoundFXObject, transform.TransformPoint(_controller.center), Quaternion.identity);
+
+                    audioSource.clip = FootstepAudioClips[index];
+
+                    audioSource.Play();
+
+                    float clipLength = audioSource.clip.length;
+
+                    Destroy(audioSource.gameObject, clipLength);
                 }
             }
         }
@@ -385,7 +395,15 @@ namespace StarterAssets
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                AudioSource audioSource = Instantiate(SoundFXObject, transform.TransformPoint(_controller.center), Quaternion.identity);
+                
+                audioSource.clip = LandingAudioClip;
+
+                audioSource.Play();
+
+                float clipLength = audioSource.clip.length;
+
+                Destroy(audioSource.gameObject, clipLength);
             }
         }
     }
