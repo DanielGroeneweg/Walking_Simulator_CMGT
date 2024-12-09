@@ -44,6 +44,5 @@ public class Inventory : ScriptableObject
     public void EmptyInventory()
     {
         inventoryItems.Clear();
-        inventoryItems.Add(itemTypes.None);
     }
 }
