@@ -31,7 +31,7 @@ namespace StarterAssets
         public AudioSource SoundFXObject;
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
-        [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
+        [Range(0, 1)] public float FootstepAudioVolume = 1f;
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
@@ -382,6 +382,8 @@ namespace StarterAssets
 
                     audioSource.clip = FootstepAudioClips[index];
 
+                    audioSource.volume = FootstepAudioVolume;
+
                     audioSource.Play();
 
                     float clipLength = audioSource.clip.length;
@@ -398,6 +400,8 @@ namespace StarterAssets
                 AudioSource audioSource = Instantiate(SoundFXObject, transform.TransformPoint(_controller.center), Quaternion.identity);
                 
                 audioSource.clip = LandingAudioClip;
+
+                audioSource.volume = FootstepAudioVolume;
 
                 audioSource.Play();
 
