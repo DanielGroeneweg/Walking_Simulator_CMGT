@@ -6646,6 +6646,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.04524738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7489316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3224345987524932214, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
     - {fileID: 4266726976019620948, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
@@ -6758,6 +6783,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.04524738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7489316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3224345987524932214, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
@@ -7328,6 +7373,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.04524738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7489316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3224345987524932214, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
     - {fileID: 4266726976019620948, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
@@ -7440,6 +7505,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.04524738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7489316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689427206792688629, guid: a35be9def8712c44b9a1a0f8e59c0c79,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3224345987524932214, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
