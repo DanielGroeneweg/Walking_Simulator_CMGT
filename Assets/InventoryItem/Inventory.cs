@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [CreateAssetMenu]
 public class Inventory : ScriptableObject
 {
-    public enum itemTypes { Key, None }
+    public enum itemTypes { Key, None, Emblems }
     public List<itemTypes> inventoryItems;
     private void Awake()
     {
@@ -38,7 +38,7 @@ public class Inventory : ScriptableObject
             }
         }
 
-        Debug.LogError("Item Was Not Found In Inventory!");
+        Debug.LogError("Item Was Not Found In Inventory! Checked for: " + itemType);
     }
 
     public void EmptyInventory()

@@ -13243,6 +13243,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyHut
       objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2255529363480328844}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CheckForItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CheckInventory, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560973243696679008, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+        type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5904572924484077597, guid: dee8d2a66d8a7914bb045f2536a8e00c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13321,6 +13361,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee8d2a66d8a7914bb045f2536a8e00c, type: 3}
+--- !u!114 &2255529363480328844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4355157397206887952, guid: dee8d2a66d8a7914bb045f2536a8e00c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2255529363480328843}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31014388a8b177c449b9baaafeb5dc8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4196023152888033631
 PrefabInstance:
   m_ObjectHideFlags: 0
