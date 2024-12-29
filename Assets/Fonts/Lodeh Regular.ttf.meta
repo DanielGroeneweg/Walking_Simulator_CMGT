@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fcc2363f22add74d9d06ac73bd0bdd1
+guid: 18c1de0e9b9ae0b4385f844418291273
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - the rum is gone
+  - Lodeh Regular
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
