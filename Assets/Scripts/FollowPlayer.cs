@@ -17,8 +17,11 @@ public class FollowPlayer : MonoBehaviour
         pos.z = playerPos.z;
 
         // Calculate Y changes
-        float yChange = playerPos.y - lastPlayerPosY;
-        pos.y += yChange;
+        if (lastPlayerPosY != 0)
+        {
+            float yChange = playerPos.y - lastPlayerPosY;
+            pos.y += yChange;
+        }
 
         // Make it follow the player
         transform.position = pos;
